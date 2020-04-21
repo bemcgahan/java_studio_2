@@ -8,6 +8,9 @@ public class Area {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a radius: ");
         double radius = input.nextDouble();
+        if (radius < 0){
+            System.out.println("Radius can't be a negative number");
+        }
 
         input.close();
 
